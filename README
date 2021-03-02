@@ -1,0 +1,14 @@
+full screen window manager with libxcb and less than 100 lines of C89.
+
+Installation
+1. git clone https://github.com/pbizopoulos/fswm
+2. cd fswm/
+3. sudo make clean install
+
+Usage
+1. Add 'fswm <program> <program-options>' to your .xinitrc.
+* e.g. 'fswm st -f "Source Code Pro:pixelsize=64:style=bold"'
+2. Initialize an X session with 'startx'.
+* Mod4-m Open <program> in a new, full screen window.
+* Mod4-j Go to next window.
+* Mod4-k Go to previous window.
