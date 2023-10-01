@@ -1,0 +1,25 @@
+# Full screen window manager with libxcb and around 200 lines of C89
+
+# Requirements
+POSIX Utilities
+C89 compiler
+Git
+libxcb-keysyms1-dev
+
+# Download
+git clone https://github.com/pbizopoulos/fswm
+cd fswm/
+
+# Development
+make clean check all
+
+# Installation
+sudo make clean install
+echo 'exec fswm st' >> ~/.xinitrc
+startx
+
+# Usage
+Ctrl-Alt-t	# Open <program> in a new, full screen window.
+Alt-Tab		# Enter next window.
+Alt-Shift-Tab	# Enter previous window.
+Ctrl-Alt-Delete	# Quit fswm.
