@@ -1,28 +1,24 @@
 .POSIX:
 
 CC = gcc
-CFLAGS = -g -Ofast -std=c89 -Wall -Wconversion -Werror -Wextra -Wmissing-prototypes -Wold-style-definition -Wpedantic -Wstrict-prototypes
+CFLAGS = -O3 -std=c89 -Wall -Wconversion -Werror -Wextra -Wmissing-prototypes -Wold-style-definition -Wpedantic -Wstrict-prototypes
 LDLIBS = -lxcb -lxcb-keysyms
 PREFIX = /usr/local
-PRG = fswm
 
-all: $(PRG)
+all: fswm
 
 check:
 
 clean:
-	rm -f $(PRG)
+	rm -f fswm
 
-install: $(PRG)
+install: fswm
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
-	cp -f $(PRG) $(DESTDIR)$(PREFIX)/bin
-	chmod 755 $(DESTDIR)$(PREFIX)/bin/$(PRG)
+	cp -f fswm $(DESTDIR)$(PREFIX)/bin
+	chmod 755 $(DESTDIR)$(PREFIX)/bin/fswm
 
 uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/bin/$(PRG)
+	rm -f $(DESTDIR)$(PREFIX)/bin/fswm
 
-.gitignore:
-	printf '$(PRG)\n' > $@
-
-$(PRG): $(PRG).c
-	$(CC) $(CFLAGS) $(LDLIBS) -o $@ $(PRG).c
+fswm: fswm.c
+	$(CC) $(CFLAGS) $(LDLIBS) -o $@ $<
