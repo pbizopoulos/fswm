@@ -1,4 +1,5 @@
-# Full screen window manager with libxcb and around 200 lines of C89
+# fswm
+fswm is a feature-complete and portable full screen window manager based on libxcb and 221 lines of C89.
 
 # Requirements
 POSIX Utilities
@@ -19,7 +20,7 @@ echo 'exec fswm st' >> ~/.xinitrc
 startx
 
 # Usage
-Ctrl-Alt-t	# Open <program> in a new, full screen window.
+Ctrl-Alt-t	# Execute fswm arguments and map in a new, full screen window.
 Alt-Tab		# Enter next window.
 Alt-Shift-Tab	# Enter previous window.
 Ctrl-Alt-Delete	# Quit fswm.

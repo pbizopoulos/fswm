@@ -1,6 +1,6 @@
 .POSIX:
 
-CC = gcc
+CC = cc
 CFLAGS = -O3 -std=c89 -Wall -Wconversion -Werror -Wextra -Wmissing-prototypes -Wold-style-definition -Wpedantic -Wstrict-prototypes
 LDLIBS = -lxcb -lxcb-keysyms
 PREFIX = /usr/local
