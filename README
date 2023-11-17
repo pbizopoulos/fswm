@@ -1,5 +1,5 @@
 # fswm
-Feature-complete and portable full screen window manager based on libxcb and 221 lines of C89.
+Feature-complete and portable full screen window manager based on XCB and 221 lines of C89.
 
 # Requirements
 POSIX Utilities
