@@ -24,3 +24,4 @@ Ctrl-Alt-t	# Execute fswm arguments and map in a new, full screen window.
 Alt-Tab		# Enter next window.
 Alt-Shift-Tab	# Enter previous window.
 Ctrl-Alt-Delete	# Quit fswm.
+
