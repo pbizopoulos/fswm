@@ -8,8 +8,8 @@ Git
 libxcb-keysyms1-dev
 
 # Download
-git clone https://github.com/pbizopoulos/fswm
-cd fswm/
+git clone https://github.com/pbizopoulos/fswm $HOME/github.com/pbizopoulos/fswm
+cd $HOME/github.com/pbizopoulos/fswm/
 
 # Development
 make clean check all
